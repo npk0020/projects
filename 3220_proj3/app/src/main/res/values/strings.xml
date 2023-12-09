@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Nate\'s Gallery</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home">Home</string>
+    <string name="first_fragment_label">Lucille</string>
+    <string name="second_fragment_label">Archibald</string>
+    <string name="third_fragment_label">Trash Compactor</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="Lucille_button">Lucille</string>
+    <string name="Archibald_button">Archibald</string>
+    <string name="TrashCompactor_button">Trash Compactor</string>
+
+    <string name="toolbar_content">
+        Toolbar
+    </string>
+    <string name="home_text">
+        Please select a chihuahua.... they\'re all lovely!
+    </string>
+    <string name="chi_1_content">
+        Our First Chihuahua
+    </string>
+    <string name="chi_2_content">
+        Our Second Chihuahua
+    </string>
+    <string name="chi_3_content">
+        Our Third Chihuahua
+    </string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.imageapp.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment"
+            app:exitAnim="@anim/fade_out"
+            app:enterAnim="@anim/slide_in" />
+        <action
+            android:id="@+id/action_FirstFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment"
+            app:exitAnim="@anim/fade_out"
+            app:enterAnim="@anim/slide_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.imageapp.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:exitAnim="@anim/fade_out"
+            app:enterAnim="@anim/slide_in" />
+        <action
+            android:id="@+id/action_SecondFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment"
+            app:exitAnim="@anim/fade_out"
+            app:enterAnim="@anim/slide_in" />
+        <action
+            android:id="@+id/action_SecondFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment"
+            app:exitAnim="@anim/fade_out"
+            app:enterAnim="@anim/slide_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="com.example.imageapp.ThirdFragment"
+        android:label="@string/third_fragment_label"
+        tools:layout="@layout/fragment_third">
+
+        <action
+            android:id="@+id/action_ThirdFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment"
+            app:exitAnim="@anim/fade_out"
+            app:enterAnim="@anim/slide_in" />
+        <action
+            android:id="@+id/action_ThirdFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment"
+            app:exitAnim="@anim/fade_out"
+            app:enterAnim="@anim/slide_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.imageapp.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:exitAnim="@anim/fade_out"
+            app:enterAnim="@anim/slide_in" />
+        <action
+            android:id="@+id/action_HomeFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment"
+            app:exitAnim="@anim/fade_out"
+            app:enterAnim="@anim/slide_in" />
+        <action
+            android:id="@+id/action_HomeFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment"
+            app:exitAnim="@anim/fade_out"
+            app:enterAnim="@anim/slide_in"/>
+    </fragment>
+</navigation>
